@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jmccrae.gradletest" >
+
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.example.mapdemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hs.mapdemo.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:name=".NoMad"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.jmccrae.gradletest.SplashScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapMain"/>
+        <activity android:name=".LogIn" android:clearTaskOnLaunch="true" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".FormView" android:windowSoftInputMode="stateHidden" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".InforMation"/>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB7E1M2_fLwJPc9LqNwdLKF-669bp99R3g" />
+        <!-- John Debug API Key: AIzaSyB9KOu7VX9zJzP8OVuRyVpv31baJXf0JqM -->
+        <!-- John Prod API Key: AIzaSyB7E1M2_fLwJPc9LqNwdLKF-669bp99R3g -->
+
+    </application>
+
+</manifest>

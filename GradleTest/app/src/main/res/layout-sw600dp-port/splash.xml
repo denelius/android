@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/nfbg"
+        android:padding="10px" >
+    <ImageButton
+        android:id="@+id/nf"
+        android:background="@null"
+        android:layout_marginTop="100sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:src="@drawable/nf_logo_nbg"
+        android:layout_below="@+id/TextView00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <ImageButton
+        android:id="@+id/csn"
+        android:background="@null"
+        android:layout_marginTop="20sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:src="@drawable/csn"
+        android:layout_below="@+id/nf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="30sp"
+        android:layout_below="@+id/csn"
+        android:padding="30px"
+        android:paddingLeft="80px"
+        android:paddingRight="80px">
+    </ProgressBar>
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="48sp"
+        android:layout_below="@+id/progressBar1"
+        android:textStyle="bold"
+        android:textColor="@color/nftxt"
+        android:text="fieldwork application">
+    </TextView>
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="48sp"
+        android:layout_below="@+id/TextView01"
+        android:textStyle="bold"
+        android:textColor="@color/nftxt"
+        android:text="demonstration">
+    </TextView>
+</RelativeLayout>
