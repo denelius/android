@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <resources>
+            <color name="henryford">#000000</color>
+            <color name="nfbg">#f4f4f4</color>
+            <color name="nftxt">#5C5C5C</color>
+            <color name="abouttxt">#7D7D7D</color>
+            <color name="blacktxt">#000000</color>
+            <color name="hint">#acacac</color>
+            <color name="status">#fe0000</color>
+        </resources>
